@@ -5,7 +5,9 @@ let currentSelected = null;
 function loadTable(data) {     
          
     // Sample JSON data
-    let dataBook = data || JSON.parse(window.localStorage.getItem('bookStores'));
+    let dataBook = data || JSON.parse(window.localStorage.getItem('bookStores')) || {
+        items: []
+    };;
     document.getElementById('deleteConfirm').style.display='none';
 
     $table = "<table id='myTable'><tr><th>ID</th><th>Name</th><th>Author</th><th>Topic</th><th>Action</th></tr>";
@@ -109,9 +111,3 @@ function searchBook() {
     
 
 }
-
-
-//   {"items":[
-//     {"id":"1","name":"Refactoring","author":"Martin Fowler", "topic":"Programming"},
-//     {"id":"2","name":"Refactoring","author":"Martin Fowler", "topic":"Programming"}
-//  ]}
