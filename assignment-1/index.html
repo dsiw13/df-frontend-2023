@@ -8,7 +8,90 @@
   </head>
 
   <body>
-    Hello world
+    <header>
+      <div class="header"> 
+        <div class="booktitle">
+          Bookstore
+        </div>
+        <div class="profile">
+          <div class="nameprofile">
+            <p>John Doe </p>
+          </div>
+          <div class="imgprofile" >
+            <img src="../assets/icons8-male-user-24.png">
+          </div>
+        </div>
+      </div>
+    </header>
+    <body>
+      <div class="container">
+        <div class="tablheader">
+          <div class="searchbox">
+            <input type="text" id="searchbox" name="searchbox" value=""><br>
+          </div>
+          <div class="searchButton">
+            <input id="searchButton" class="secondaryButton" type="button" value="Search" onClick="searchBook()">
+          </div>
+
+
+          <div class="btnAddbook">
+            <input id="btnAddbook" class="primaryButton" type="button" value="Add book" onclick="document.getElementById('addBook').style.display='block'">
+          </div>
+          
+          <div id="addBook" class="add-new-book-modal">
+            <div class="modal-content">
+              <div class="modal-container">
+                <span class="closeIcon" onclick="document.getElementById('addBook').style.display='none'">&times;</span>
+                <h3> Add new book </h3>
+                <div class="textBox">
+                  <label class="lbal">Name</label>
+                  <input type="text" id="addName" name="addName">
+                </div>
+                <div class="textBox">
+                  <label class="lbal">Author</label>
+                  <input type="text" id="addAuthor" name="addAuthor">
+                </div>
+                <div class="textBox">
+                  <label class="lbal">Topic</label>
+                  <input type="selection" id="addTopic" name="addTopic">
+                </div>
+                <div class="modalFooter"> 
+                  <div class="submitNew">
+                    <input id="submitNew" class="primaryButton" type="button" value="Create" onClick="createNew()">
+                  </div>
+                </div>
+                
+                
+              </div>
+            </div>
+          </div>
+
+          <div id="deleteConfirm" class="add-new-book-modal">
+            <div class="modal-content">
+              <div class="modal-container">
+                <span class="closeIcon" onclick="document.getElementById('deleteConfirm').style.display='none'">&times;</span>
+                <h3> Are you sure to delete the selected book? </h3>
+                <div class="modalFooter"> 
+                  <div class="cancelDelete">
+                    <input id="cancelDelete" class="secondaryButton" type="button" value="Cancel" onclick="document.getElementById('deleteConfirm').style.display='none'">
+                  </div>
+                  <div class="confirmDelete">
+                    <input id="confirmDelete" class="primaryButton" type="button" value="OK" onclick="deleteBook()">
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div id="tablecontent">
+          
+        </div>
+        
+      </div>
+    </body>
     <script src="script.js"></script>
   </body>
 </html>

@@ -2,3 +2,142 @@ html {
   height: 100%;
   width: 100%;
 }
+
+body {
+  font: 13px -apple-system, -apple-system,  BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  }
+
+.header{
+  height:35px;
+  border-bottom: 1px solid #999797;
+  display:flex;
+  direction: ltr;
+  
+}
+
+.booktitle {
+  width: 70%;
+  font-size: 24px;
+  margin:auto;
+  }
+
+.profile {
+  width:30%;
+  display:flex;
+  direction: rtl;
+  height:100%;
+  }
+
+.profile .imgprofile {
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right:4px;
+}
+.profile .nameprofile {
+  margin: auto 0;
+}
+
+p {
+  margin:auto;
+  }
+
+.container {
+  background-color: #F7F9F9;
+}
+
+.tablheader{
+  display:flex;
+  direction: ltr;
+  float:right;
+  padding:12px;
+}
+
+.searchbox{
+  margin-right:8px;
+  border-radius:4px;
+}
+
+.primaryButton{
+  border-radius:4px;
+  background-color:#D3445A;
+  color:white;
+
+}
+
+.secondaryButton{
+  border-radius:4px;
+  background-color:#ffffff;
+  border: 2px solid #909090;
+  color: #050505;
+  margin-right:8px;
+
+}
+
+.modalFooter{
+  display:flex;
+  direction:ltr;
+  justify-content: center;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #ffffff;
+  margin-top:24px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+a {
+  color:#D3445A;
+  text-decoration: underline;
+}
+
+.closeIcon{
+  float: right;
+
+}
+
+.add-new-book-modal{
+  z-index:3;
+  display:none;
+  padding-top:100px;
+  position:fixed;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  overflow:auto;
+  background-color:rgb(0,0,0);
+  background-color:rgba(0,0,0,0.4)
+  }
+
+.modal-content{
+  margin:auto;
+  background-color:#fff;
+  position:relative;
+  padding:0;
+  outline:0;
+  width:600px
+}
+
+.modal-container{
+  padding:16px;
+}
+
+.lbal{
+  width:30px !important;
+}
+
+.textBox{
+  margin-top:8px;
+  }
+
+  .submitNew{
+    margin-top:8px;
+  }
